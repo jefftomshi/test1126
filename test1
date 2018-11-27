@@ -1,0 +1,14 @@
+import wx
+
+app = wx.App()
+frame = wx.Frame(None, -1, "wxPython GUI", size=(200, 150))
+frame.SetBackgroundColour('white')
+frame.CreateStatusBar()
+menu = wx.Menu()
+menu.Append(wx.ID_ABOUT, "About", "wxPython GUI")
+menuBar = wx.MenuBar()
+menuBar.Append(menu, "File")
+frame.SetMenuBar(menuBar)
+frame.Show()
+
+app.MainLoop
